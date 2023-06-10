@@ -21,7 +21,26 @@ a:hover{
 }
 
 
+.burger {
+    overflow: hidden;
+}
+.burger_show{
+    height: 0;
+}
+.burger_show li {
+    margin-bottom: 20px;
+}
+.burger_show {
+    text-align: center;
 
+}
+.burger_show a{
+    font-size: 30px;
+
+}
+.active{
+    height: 100%;
+}
 .header {
     border-bottom: 2px solid #e8e8e8;
 }
@@ -379,24 +398,56 @@ a:hover{
     color:#e8e8e8;
 
 }
-
-
-@media (max-width:850px) {
-    .gallery_card:nth-child(3),
-    .gallery_card:nth-child(4){
-
-        display: none;
-    } 
-    
+.arrow{
+    display: none;
 }
-@media (max-width:600px) {
-    .gallery_card:nth-child(2),
+
+
+@media (min-width:700px) and (max-width:850px) {
+    .arrow{
+        display: none;
+    }
     .gallery_card:nth-child(3),
     .gallery_card:nth-child(4){
         display: none;
     } 
     
 }
+@media (max-width:700px) {
+
+    .gallery_card{
+        display: none;
+
+    }
+    .arrow{
+        display: block;
+    }
+    
+}
+.block{
+    display: block;
+
+}
+.arrow {
+    padding: 10px;
+
+}
+.arrow button{
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 5px 5px;
+    transition: .2s background ease-in-out;
+
+}
+.arrow button:hover{
+
+    background: #e8e8e8;
+    transition: .2s background ease-in-out;
+
+}
+
 
 .features {
 }

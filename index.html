@@ -32,11 +32,25 @@
                     </ul>
                 </div>
                 <div class="header_thrid">
-                    <a href="#"><img src="img/icons/icons8-меню-100.png" alt=""></a>
+                    <a href="#" id="burger_button"><img src="img/icons/icons8-меню-100.png" alt=""></a>
                 </div>
             </div>
         </div>
+        <div class="burger">
+            <div class="burger_show">
+                <ul>
+                        <li><a href="#">Stories</a></li>
+                        <li><a href="#">Gallery</a></li>
+                        <li><a href="#">Features</a></li>
+                        <li><a href="#">Write to us</a></li>
+                        <hr>
+                        <li style="padding-top: 20px;"><a href="#" id="close">CLOSE</a></li>
+                </ul>
+
+            </div>
+        </div>
     </header>
+
     <main class="main">
         <div class="slider">
             <div class="width">
@@ -85,6 +99,7 @@
                 <div class="gallery_main">
                     <h2 class="heading_title">gallery</h2>
                     <div class="gallery_slider">
+                        <div class="arrow"><button class="btnleft"><img src="img/icons/icons8-назад-50.png" alt=""></button></div>
                         <div class="gallery_card">
                             <div class="gallery_card_img">
                                 <img src="img/gallery/journey.png" alt="">
@@ -128,6 +143,8 @@
                                 <a href="#">More</a>
                             </div>
                         </div>
+                        <div class="arrow"><button class="btnRight"><img src="img/icons/icons8-вперед-50.png" alt=""></button></div>
+
                     </div>
                 </div>
             </div>
@@ -260,6 +277,6 @@
             </div>
             <h2> ©UNITITLED 2019</h2>
     </footer>
-    
+    <script src="script.js"></script>
 </body>
 </html>
